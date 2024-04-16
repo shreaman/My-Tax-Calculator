@@ -58,22 +58,12 @@ select{
     opacity: 1;
 }
 
-.maiIncomeInput {
+.maiIncomeInput, .extraIncome, .deduction{
     position: relative;
     margin-top: 20px;
 }
 
-.extraIncome{
-    position: relative;
-    margin-top: 20px;
-}
-
-.deduction{
-    position: relative;
-    margin-top: 20px;
-}
-
-.firstErrorIcon {
+.firstErrorIcon, .secondtErrorIcon, .thirdtErrorIcon {
     position: absolute;
     top: 70%;
     right: 10px;
@@ -82,20 +72,3 @@ select{
     visibility: hidden;
   }
 
-.secondtErrorIcon{
-    position: absolute;
-    top: 70%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    visibility: hidden;
-}
-
-.thirdtErrorIcon{
-    position: absolute;
-    top: 70%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    visibility: hidden;
-}
