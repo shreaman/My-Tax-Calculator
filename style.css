@@ -1,0 +1,101 @@
+body{
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+.maindiv{
+    padding: 50px 20px 20px 10px;
+    background-color: wheat;
+    border: 1px solid black;
+    width: 60vh;
+}
+
+input[type="text"],
+input[type="submit"]{
+    display: grid;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+}
+
+input[type="submit"]{
+    background-color: rgb(200, 164, 233);
+    border-radius: 5px;
+}
+
+select{
+    display: grid;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+}
+
+.label1 {
+    position: relative;
+    display: inline-block;
+}
+
+.lable1Tooltip {
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.fa-question-circle:hover +.lable1Tooltip{
+    visibility: visible;
+    width: 100px;
+    opacity: 1;
+}
+
+.maiIncomeInput {
+    position: relative;
+    margin-top: 20px;
+}
+
+.extraIncome{
+    position: relative;
+    margin-top: 20px;
+}
+
+.deduction{
+    position: relative;
+    margin-top: 20px;
+}
+
+.firstErrorIcon {
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden;
+  }
+
+.secondtErrorIcon{
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.thirdtErrorIcon{
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden;
+}

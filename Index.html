@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <title>Tax Calculator</title>
+</head>
+<body>
+    <div class="maindiv">
+        <form id="taxForm">
+            <div class="maiIncomeInput">
+                <label class="label1">Enter gross annual income <i class="fa fa-question-circle"></i>
+                    <span class="lable1Tooltip">Gross annual income is your total salary in a year deductions.</span>
+                </label>
+                <input type="text" id="annualIncome" placeholder="Enter gross annual income" required>
+                <i class="material-icons firstErrorIcon" id="firstErrorIcon">error_outline</i>
+            </div>
+            <div class="extraIncome">
+                <label>Enter extra income <i class="fa fa-question-circle"></i>
+                    <span class="lable1Tooltip">Extra income is the income the you are earning form other source.</span> 
+                </label>
+                <input type="text" id="extraIncome" placeholder="Enter extra income form other sources" required> 
+                <i class="material-icons secondtErrorIcon" id="secondErrorIcon">error_outline</i>
+            </div>
+            <div>
+                <label>Select age group <i class="fa fa-question-circle" ></i>
+                    <span class="lable1Tooltip">The tax will be depending on your age.</span> 
+                </label>
+                <select id="ageGroup">
+                    <option>Select</option>
+                    <option>Below 40</option>
+                    <option>40 to 59</option>
+                    <option>Senior Citizen(60 and over)</option>
+                </select>
+            </div>
+            <div class="deduction">
+                <label>Enter total deductions <i class="fa fa-question-circle"></i>
+                    <span class="lable1Tooltip">Deductions typically refer to expenses or amounts that can be subtracted from your total income before calculating taxes.</span> 
+                </label>
+                <input type="text" id="totalDeductions" placeholder="Add total applicable deductions" re>
+                <i class="material-icons thirdtErrorIcon" id="lastErrorIcon">error_outline</i>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
